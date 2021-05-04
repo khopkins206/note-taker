@@ -8,8 +8,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static('public'));
 
-require(`./Develop/routes/api/noteRoute`)(app);
-require(`./Develop/routes/html/htmlNoteRoute`)(app);
+require(`./routes/api/noteRoute`)(app);
+require(`./routes/html/htmlNoteRoute`)(app);
 
 app.listen(PORT, () => {
   console.log(`App listening on PORT: ${PORT}`)
